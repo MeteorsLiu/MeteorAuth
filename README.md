@@ -1,2 +1,2 @@
 # MeteorAuth
-A auth solution for solving Server-Server
+A Bidirectional Authentication solution
