@@ -130,11 +130,11 @@ message Key {
 ```
 1.Verify Sign
 
-if Sign are correct
+if the Sign is correct
 
 2. Verify Hash
 
-if Hash are correct
+if the Hash is correct, save the token from the sender.
 
 3. Repeat the handshake again
 
@@ -143,4 +143,33 @@ generate the token and send it to the other side
 
 
 
+## Second Step X25519 Key Distribution
 
+THIS IS Dangerous When the key is fixed.
+
+So I design the second step.
+
+Key Distribution only requires one side to do it.
+
+The keys of other side could be fixed?
+
+### How to distribute
+
+
+1. Regenerate the X25519 Key Pair(One side)
+
+2. Ed25519 Sign the Public Key
+
+3. Send it to the other side
+
+gRPC proto like
+
+```
+message Exchange {
+
+    string key = 1;
+    
+    string sign = 2;
+    
+}
+```
