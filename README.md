@@ -26,7 +26,7 @@ Client Token is for sever CMDs.
 
 Two pairs of Sign Key MUST BE SET UP for the first time
 
-E.g Client Private Key stores in the clinet side, whose public key stores in the server side
+E.g Client Private Key stores in the client side, whose public key stores in the server side
 
 Server Private Key stores in the server side, whose public key stores in the client side
 
