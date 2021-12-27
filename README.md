@@ -158,7 +158,7 @@ The keys of other side could be fixed?
 
 1. Regenerate the X25519 Key Pair(One side)
 
-2. Ed25519 Sign the Public Key
+2. Ed25519 Sign the regenerated Public Key
 
 3. Send it to the other side
 
@@ -173,3 +173,6 @@ message Exchange {
     
 }
 ```
+
+
+Then the other side only requires to verify the sign.
