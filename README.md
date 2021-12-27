@@ -22,7 +22,7 @@ Client Token is for sever CMDs.
 
 ### How to Handshake
 
-1. initialize
+#### 1. initialize
 
 Two pairs of Sign Key MUST BE SET UP for the first time
 
@@ -31,13 +31,13 @@ E.g Client Private Key stores in the client side, whose public key stores in the
 Server Private Key stores in the server side, whose public key stores in the client side
 
 
-2. Algorithm
+#### 2. Algorithm
 
 **Sign Algo: Ed25519**
 
 **Verify Algo: X25519 + HMAC-SHA256**
 
-3. Params
+#### 3. Params
 
 **Server Side**
 
@@ -66,7 +66,7 @@ Server Public Key FOR X25519
 ```
 
 
-4. Process
+#### 4. Process
 
 1. One side request the handshake action
 
